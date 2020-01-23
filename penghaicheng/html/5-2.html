@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>文本输入框、密码输入框</title>
+</head>
+<!-- 注释：<input type="text/password" name="名称" value="文本" /> -->
+<!-- 1、type： -->
+   <!-- 当type="text"时，输入框为文本输入框; -->
+
+   <!-- 当type="password"时, 输入框为密码输入框。 -->
+
+<!-- 2、name：为文本框命名，以备后台程序ASP 、PHP使用。 -->
+<!-- 3、value：为文本输入框设置默认值。(一般起到提示作用) -->
+<body>
+<form  method="post" action="save.php">
+    账户: 
+	<input type="text" name="myName" id="myname" value="" />
+	<br />
+	密码: 
+    <input type="password" name="pass" id="pass" value="" />
+    <input type="submit" value="确定"  name="submit" />
+    <input type="reset" value="重置" name="reset" />
+</form> 
+</body>  
+</html>
