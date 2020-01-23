@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>单选框、复选框</title>
+</head>
+<body>
+<form action="save.php" method="post" >
+    <!-- <input   type="radio/checkbox"   value="值"    name="名称"   checked="checked"/> -->
+    <!-- 1、type:
+
+   当 type="radio" 时，控件为单选框
+
+   当 type="checkbox" 时，控件为复选框
+
+2、value：提交数据到服务器的值（后台程序PHP使用）
+
+3、name：为控件命名，以备后台程序 ASP、PHP 使用
+
+4、checked：当设置 checked="checked" 时 ，就是被选中的意思-->
+    <label>性别:</label>
+    <label>男</label>
+    <input type="radio" value="1"  name="gender" />
+    <label>女</label>
+    <input type="radio" value="2"  name="gender" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>下拉列表框</title>
+    </head>
+    <body>
+    <form action="save.php" method="post" >
+        <label>爱好:</label>
+        <!-- 出现selected="selected"的时候就是选项默认选择这个选项。 -->
+        <select>
+          <option value="看书">看书</option>
+          <option value="旅游"selected="selected">旅游</option>
+          <option value="运动">运动</option>
+          <option value="购物">购物</option>
+        </select>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>使用下拉列表框进行多选</title>
+    </form>
+<form action="save.php" method="post" >
+    <label>爱好:</label>
+    <!-- select multiple="multiple"有这个条件时，为可多选词，mac为command+/就可以多选 -->
+    <select multiple="multiple">
+      <option value="看书">看书</option>
+      <option value="旅游">旅游</option>
+      <option value="运动">运动</option>
+      <option value="购物">购物</option>
+    </select>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>提交按钮</title>
+</form>
+<form  method="post" action="save.php">
+    <!-- 想要提交键是，条件必须是 type="submit"-->
+    <label for="myName">姓名：</label>
+    <input type="text" value=" " name="myName " />
+    <input type="submit" value="提交" name="submitBtn" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>重置按钮</title>
+</form>
+<form action="save.php" method="post" >
+    <label>爱好:</label>
+    <select>
+      <option value="看书">看书</option>
+      <option value="旅游" selected="selected">旅游</option>
+      <option value="运动">运动</option>
+      <option value="购物">购物</option>
+    </select>
+    <input type="submit" value="确定"  />
+    <input type="reset" value="重置" name="resetBtn" />
+</form>
+<form>
+    <!--label for=id 这是必须的  -->
+    <p>你对什么运动感兴趣</p>
+   <label for="run">慢跑</label>
+  <input type="radio" name="gender" id="run" />
+  <br />
+  <label for="dengshan">登山</label>
+  <input type="radio" name="gender" id="dengshan" />
+  <br />
+   <label for="lanqiu">篮球</label>
+  <input type="radio" name="gender" id="lanqiu" />
+  <br />
+  <label for="email">输入你的邮箱地址</label>
+  <input type="email" id="email" placeholder="Enter email">
+</form>
+</body>
+</html>
