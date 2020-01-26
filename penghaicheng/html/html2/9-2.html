@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- 注释：权值的规则： -->
+    <!-- 标签的权值为1，类选择符的权值为10，ID选择符的权值最高为100。
+    p{color:red;} /*权值为1*/
+    p span{color:green;} /*权值为1+1=2*/
+    .warning{color:white;} /*权值为10*/
+    p span.warning{color:purple;} /*权值为1+1+10=12*/
+    #footer .note p{color:yellow;} /*权值为100+10+1=111*/ -->
+
+    <!-- 注释：优先级顺序： -->
+    <!-- 优先级：内联样式 > ID选择器 > 类选择器 > 标签选择器 > 通用选择器 > 继承样式 > 浏览器默认样式， -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>特殊性</title>
+<style type="text/css">
+p{color:red;}
+.first{color:green;}/*因为权值高显示为绿色*/
+
+span{color:pink;}/*设置为粉色*/
+
+
+</style>
+</head>
+<body>
+    <h1>勇气</h1>
+    <p class="first">三年级时，我还是一个<span>胆小如鼠</span>的小女孩，<br />
+        上课从来不敢回答老师提出的问题，生怕回答错了老师会批评我。<br />
+        就一直没有这个勇气来回答老师提出的问题。学校举办的活动我也没勇气参加。</p>
+    <p id="second">到了三年级下学期时，我们班上了一节公开课，老师提出了一个很简单的问题，<br />
+        班里很多同学都举手了，甚至成绩比我差很多的，也举手了，还说着："我来，我来。"我环顾了四周，就我没有举手。</p>
+</body>
+</html>

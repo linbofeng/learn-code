@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>form中的lable标签</title>
+</head>
+<!-- 注释：<label for="控件id名称">文本</label> -->
+<!-- 注意：标签的 “for 属性中的值” 应当与相关控件的“ id 属性值”一定要相同。 -->
+    <!-- 再次强调！当 type="radio" 时，控件为单选框 -->
+   <!-- 当 type="checkbox" 时，控件为复选框 -->
+
+<body>
+<form>
+    <label>你对什么运动感兴趣：</label><br />
+   <label for="male">慢跑</label>
+  <input type="checkbox" name="gender" id="male" />
+  <br />
+  <label for="female">登山</label>
+  <input type="checkbox" name="gender" id="female" />
+  <br />
+  <label for="female">篮球</label>
+  <input type="checkbox" name="gender" id="female" />
+</form>
+
+</body>
+</html>
