@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>单选框、复选框</title>
+</head>
+<!-- 注释：<input   type="radio/checkbox"   value="值"    name="名称"   checked="checked"/> -->
+<!-- 1、type: -->
+   <!-- 当 type="radio" 时，控件为单选框 -->
+   <!-- 当 type="checkbox" 时，控件为复选框 -->
+
+<!-- 2、checked：当设置 checked="checked" 时，该选项被默认选中 -->
+<body>
+<form action="save.php" method="post" >
+    <label>性别:</label>
+    <label>男</label>
+    <input type="radio" value="1"  name="gender" checked="checked"/>
+    <label>女</label>
+    <input type="radio" value="2"  name="gender" />
+</form>
+</body>
+</html>
