@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>浮动模型</title>
+<style type="text/css">
+div{
+	border:2px red solid;
+    width:200px;
+    height:400px;
+	/* float:left;是左对齐的意思*/
+    float:left;
+}
+
+</style>
+</head>
+<body>
+<div id="div1">栏目1</div>
+<div id="div2">栏目2</div>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>absolute样式</title>
+    <style type="text/css">
+    div{
+        width:200px;
+        height:200px;
+        border:2px red solid;
+       /* 设置div标签相对于浏览器，（相对于以前位置右上角）向左移动100象素，向下移动20象素。 */
+        /* 1、绝对定位(position: absolute)
+            2、相对定位(position: relative)
+            3、固定定位(position: fixed） */
+        position:absolute;
+        right:100px;
+        top:20px;
+         }
+    </style>
+    </head>
+    <body>
+    <div id="div1"></div>
+    </body>
+</body>
+</html>

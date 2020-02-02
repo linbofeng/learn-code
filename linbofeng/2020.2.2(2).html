@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>不定宽块状元素水平居中</title>
+<style>
+/* 通过给父元素设置 float，然后给父元素设置 position:relative 和 left:50%，子元素设置 position:relative 和 left: -50% 来实现水平居中。 */
+.container{
+    float:left;
+	position:relative;
+	left:50%
+}
+
+.container ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	
+	position:relative;
+	left:-50%;
+}
+.container li{float:left;display:inline;margin-right:8px;}
+
+
+/*下面是代码任务区*/
+
+.wrap-center{
+    background:#ccc;
+    
+    
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<ul>
+    	<li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+    </ul>
+</div>
+
+<!--下面是代码任务区-->
+<div class="wrap">
+    <div class="wrap-center">我们来学习一下这种方法。</div>
+</div>
+</body>
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta  charset="utf-8">
+<title>隐性改变display类型</title>
+<style>
+.container a{
+    position:absolute;
+	width:200px;
+	background:#ccc;
+	
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+    <a href="#" title="">进入课程请单击这里</a>
+</div>
+</body>
+</html>
+</html>
