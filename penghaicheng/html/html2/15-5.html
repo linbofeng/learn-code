@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- 注释：水平居中总结-不定宽块状元素方法 -->
+    <!-- 通过给父元素设置 float，然后给父元素设置 position:relative 和 left:50%，
+    子元素设置 position:relative 和 left: -50% 来实现水平居中。 -->
+<meta charset="utf-8">
+<title>不定宽块状元素水平居中</title>
+<style>
+/* 注释：下面是代码任务区  */
+
+.wrap{
+    float:right;
+    position:relative;
+    right:50%
+    }
+.wrap-center{
+    top:30px;
+    background:#ccc;
+    position:relative;
+    right:-50%;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<ul>
+    	<li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+    </ul>
+</div>
+
+<!--下面是代码任务区-->
+<div class="wrap">
+    <div class="wrap-center">我们来学习一下这种方法。</div>
+</div>
+</body>
+</html>
