@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- 注释：绝对定位的方法（元素与元素的定位） -->
+    <!-- 1、参照定位的元素必须是相对定位元素的前辈元素： -->
+
+<!-- <div id="box1">  参照定位的元素（也就是父元素） -->
+    <!-- <div id="box2">子元素文本或内容</div> （相对定位元素也就是子元素） -->
+    <!-- 2、参照定位的元素（父元素）必须加入position:relative;（位置：相对） -->
+    <!-- 3、定位元素（子元素）加入position:absolute（位置：绝对），便可以使用top、bottom、left、right来进行偏移定位了。 -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>相对参照元素进行定位</title>
+<style type="text/css">
+div{border:2px blue solid;}
+#box1{
+    width:200px;
+    height:200px;
+    position:relative;}
+#box2{
+    position:absolute;
+    width:99%;
+ 	bottom:0;
+	right:0;}
+</style>
+</head>
+
+<body>
+<div id="box1">
+    <img src="http://img.mukewang.com/541a7d8a00018cf102000200.jpg">
+    <div id="box2">当我还是三年级的学生时是一个害羞的小女生。</div>
+</div>
+</body>
+</html>
