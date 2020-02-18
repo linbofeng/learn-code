@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS 网页布局 - 菜鸟教程(runoob.com)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* 头部样式 */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+ 
+/* 导航链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ 
+/* 链接 - 修改颜色 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: red;
+}
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="column">
+    <h2>导航条</h2>
+    <p>小勇是暖男</p>
+  </div>
+<div class="header">
+  <h1>小勇的导航条</h1>
+</div>
+	<div class="topnav">
+  <a href="#">小勇</a>
+  <a href="#">是</a>
+  <a href="#">暖男</a>
+</div>
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="//static.runoob.com/images/demo/demo1.jpg">
+      <img src="http://static.runoob.com/images/demo/demo1.jpg" alt="图片文本描述" width="300" height="200">
+    </a>
+    <div class="desc">甜甜的恋爱什么时候轮到我</div>
+  </div>
+</div>
+ 
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="//static.runoob.com/images/demo/demo2.jpg">
+      <img src="http://static.runoob.com/images/demo/demo2.jpg" alt="图片文本描述" width="300" height="200">
+    </a>
+    <div class="desc">雾天的马路</div>
+  </div>
+</div>
+ 
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="//static.runoob.com/images/demo/demo3.jpg">
+      <img src="http://static.runoob.com/images/demo/demo3.jpg" alt="图片文本描述" width="300" height="200">
+    </a>
+    <div class="desc">海洋的大桥</div>
+  </div>
+</div>
+ 
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="//static.runoob.com/images/demo/demo4.jpg">
+      <img src="http://static.runoob.com/images/demo/demo4.jpg" alt="图片文本描述" width="300" height="200">
+    </a>
+    <div class="desc">云深不知处</div>
+  </div>
+</div>
+
+</body>
+</html>
