@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta  charset="utf-8">
+<title>父元素高度确定的多行文本</title>
+<style>
+.container{
+    height:300px;
+	background:#ccc;
+	
+	display:table-cell;/*IE8以上及Chrome、Firefox*/
+	vertical-align:middle;/*IE8以上及Chrome、Firefox*/
+}
+
+.picture{
+    height:200px;
+    background:yellow;
+    display:table-cell;
+    vertical-align:middle;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div>
+        <p>看我是否可以居中。</p>
+        <p>看我是否可以居中。</p>
+        <p>看我是否可以居中。</p>
+        <p>看我是否可以居中。</p>
+        <p>看我是否可以居中。</p>
+    </div>
+</div><br>
+<!--下面是代码任务区-->
+<div class="picture">
+    <img src="http://img.mukewang.com/54ffac56000169c001840181.jpg" title="害羞的小女生"/>
+</div>
+</body>
+</html>

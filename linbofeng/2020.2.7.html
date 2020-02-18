@@ -1,0 +1,194 @@
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+img 
+{
+	float:right;
+	border:1px dotted black;
+	margin:0px 0px 15px 20px;
+}
+</style>
+</head>
+
+<body>
+<p>
+	在下面的段落中,图像将向右浮动。黑色虚线边界添加到图像。
+我们还添加了边缘的0 px的顶部和右侧 margin,15 px底部margin,和20 px左侧的margin的图像。使得文本远离图片:</p>
+<p>
+<img src="logocss.gif" width="95" height="84" />
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</p>
+</body>
+
+</html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title>
+<style>
+span
+{
+	float:left;
+	width:1.2em;
+	font-size:400%;
+	font-family:algerian,courier;
+	line-height:80%;
+}
+</style>
+</head>
+
+<body>
+<p>
+<span>这</span>是一些文本。
+这是一些文本。这是一些文本。
+这是一些文本。这是一些文本。这是一些文本。
+这是一些文本。这是一些文本。这是一些文本。
+这是一些文本。这是一些文本。这是一些文本。
+这是一些文本。这是一些文本。这是一些文本。
+这是一些文本。这是一些文本。这是一些文本。
+这是一些文本。这是一些文本。这是一些文本。
+</p>
+
+<p>
+在上面的段落中, 第一个字嵌入在span 元素中。
+这个 span 元素的宽度是当前字体大小的1.2倍。
+这个 span 元素是当前字体的400%(相当大)， line-height 为80%。
+文字的字体为"Algerian"。
+</p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.header {
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.footer {
+    background-color: #444;
+    color: white;
+    padding: 15px;
+}
+.topmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #777;
+}
+.topmenu li {
+    float: left;
+}
+.topmenu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+.topmenu li a:hover {
+    background-color: #222;
+}
+.topmenu li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.sidemenu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+}
+.sidemenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.sidemenu li a {
+    margin-bottom: 4px;
+    display: block;
+    padding: 8px;
+    background-color: #eee;
+    text-decoration: none;
+    color: #666;
+}
+.sidemenu li a:hover {
+    background-color: #555;
+    color: white;
+}
+.sidemenu li a.active {
+    background-color: #008CBA;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<ul class="topmenu">
+  <li><a href="#home" class="active">主页</a></li>
+  <li><a href="#news">新闻</a></li>
+  <li><a href="#contact">联系我们</a></li>
+  <li><a href="#about">关于我们</a></li>
+</ul>
+
+<div class="clearfix">
+  <div class="column sidemenu">
+    <ul>
+      <li><a href="#flight">The Flight</a></li>
+      <li><a href="#city" class="active">The City</a></li>
+      <li><a href="#island">The Island</a></li>
+      <li><a href="#food">The Food</a></li>
+      <li><a href="#people">The People</a></li>
+      <li><a href="#history">The History</a></li>
+      <li><a href="#oceans">The Oceans</a></li>
+    </ul>
+  </div>
+
+  <div class="column content">
+    <div class="header">
+      <h1>The City</h1>
+    </div>
+    <h1>Chania</h1>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    <p>You will learn more about responsive web pages in a later chapter.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>底部文本</p>
+</div>
+
+</body>
+</html>
