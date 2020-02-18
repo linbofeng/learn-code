@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+    ul{list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color:mediumaquamarine;
+    
+    }
+
+    li{float: left;}
+
+    li a,.dropbtn{
+        display: inline-block;
+        text-align: center;
+        padding: 15px 20px;
+    }
+    li a:hover,.dropdown:hover,.dropbtn{
+        background-color: pink;
+    }
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color:white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+
+    }
+    .active,.meituan,.ele,.dropbtn{    cursor: pointer;
+        text-decoration:none;}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: cornsilk;}
+
+    .dropdown:hover .dropdown-content{display: block;}
+</style>
+<body>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;热烈欢迎您来到小海点餐服务中心</h1>
+<ul>
+    <li><a class="active" href="file:///C:/Users/13689/learn-code/penghaicheng/html/html2/zhuye.html">主页</a></li>
+    <li><a class="meituan" href="https://03imgmini.eastday.com/mobile/20181223/20181223013639_6af378e936845fb6fcb61b267038ccad_1.jpeg">美团服务</a></li>
+    <li><a class="ele" href="http://crawl.ws.126.net/c6acca4a6db4ca3a7b82b32df1d0108c.jpg">饿了么服务</a></li>
+    <div class="dropdown">
+        <button href="@" class="dropbtn">拓展综合服务</button>
+        <div class="dropdown-content">
+            <a href="file:///C:/Users/13689/learn-code/penghaicheng/html/html2/duodushu.html">多读书</a>
+            <a href="file:///C:/Users/13689/learn-code/penghaicheng/html/html2/kanbaozhi.html">多看报</a>
+            <a href="file:///C:/Users/13689/learn-code/penghaicheng/html/html2/lingshi.html">少吃零食</a>
+            <a href="file:///C:/Users/13689/learn-code/penghaicheng/html/html2/shuijiao.html">多睡觉</a>
+        </div>
+    </div>
+</ul>
+</body>
